@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sourcetargetdata:SourceTargetData xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rules="http://rules/1.0" xmlns:sourcetargetdata="http://sourcetargetdata/1.0" extractor="ODBC" sourceDSN="Oracle-Eclipse" sourceDTPName="New Oracle" separator="&#x9;">
+  <tables>SCOTT.CHIEFS</tables>
+  <ruleMatchers name="names" dataClassLibrary="C:/IRI/workbench2/workspace/subset-demo">
+    <rule href="../iriLibrary.rules#FieldEncryptionRule"/>
+    <matcherDetails details=".*NAME"/>
+  </ruleMatchers>
+  <rules xsi:type="rules:FieldRule" name="FieldEncryptionRule" editor="cryptoWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="enc_fp_aes256_alphanum(${FIELDNAME})"/>
+    <properties fieldRulePropertyType="NAME" value="ENC_FP_${FIELDNAME}"/>
+  </rules>
+</sourcetargetdata:SourceTargetData>
+

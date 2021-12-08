@@ -1,0 +1,40 @@
+CoSort error log started: 2021-12-08 11:57:15
+
+CoSort 10.5.1 B105210811-1500 x86_64 #21237.5427
+Filename: C:\IRI\cosort105\etc\cosort.rc
+	AUTO_TUNE                ON
+	MEMORY_MAX               AUTO
+	THREAD_MIN               1
+	THREAD_MAX               1
+	BLOCKSIZE                AUTO
+	MONITOR_LEVEL            0
+	MINIMUM_YEAR             70
+	ON_EMPTY_INPUT           PROCESS_WITH_ZEROS
+	OUTPUT_TERMINATOR        INFILE
+	WORK_AREAS               1
+	  --  .\ : 0
+Initialization started... Initialization done
+Command: /SPECIFICATION=new_subset_0.scl 
+Loaded Module: libcsodbc, Id: ef71eefdc4a542a5631c07bc06386a29c60090c8 
+Loading Modules from C:\IRI\cosort105
+Loaded Module: libcscrypt, Id: f4b4abaffe9757d953df13e32eaf84eb83dc96a0 
+[ODBC][Oracle] auto commit mode = 1
+[ODBC][Oracle] parameter array size = 1024
+Auto Tune - enabled - No Sort in Memory
+checking cutback: starting memory per thread 41943040 
+cutback done, memory_max: 41943040
+    memory_perthread_max: 10485760
+       initial recsinmem: 6291456 (100663312 bytes)
+Sort operation phase1 started...
+Sort operation phase1 done
+Sort operation phase2 started...
+t0: cpus 1 f_used 0 strt 0 len 0 mcpus 1
+Sort operation phase2 done
+Buffers cleanup started... Buffers cleanup done
+
+Blocksize  Memorysize  ExtMaxMemory  RecsInMemory  Buffers    LWF
+    600kb        40mb          40mb        6144kb        2      0
+
+Resources cleanup started... Resources cleanup done
+
+CoSort error log done: 2021-12-08 11:57:16
