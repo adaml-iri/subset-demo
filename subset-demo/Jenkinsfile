@@ -4,6 +4,7 @@ pipeline {
    		stage('build') {
   			steps {
   			    bat "C:\\IRI\\subset-demo\\subset-demo\\new_subset\\new_subset.bat"
+  			    
   			}
 		} 
 	}
