@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('run tasks') {
+        stage('run bat program') {
             steps {
-                echo "hello"
+                bat "C:\\IRI\\workbench-demos\\sub\\new_subset\\new_subset.bat"
             }
         }
     }
