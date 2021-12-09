@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('run bat program') {
             steps {
-                bat "C:\\IRI\\workbench-demos\\sub\\new_subset\\new_subset.bat"
+                bat "C:\\IRI\\subset-demo\\subset-demo\\new_subset\\new_subset.bat"
             }
         }
     }
