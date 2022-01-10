@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('run bat program') {
+        stage('run ssh task') {
             steps {
-                bat "cd C:\\IRI\\subset-demo\\subset-demo\\new_subset && .\\new_subset.bat"
+                bat "cd C:"
             }
         }
     }
