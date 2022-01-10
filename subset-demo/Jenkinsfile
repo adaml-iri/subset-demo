@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sshagent (credentials: ['work_cred']) {
                     sh 'ssh -o StrictHostKeyChecking=no $HOST_IP $CMDS'
+                }
             }
         }
     }
