@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('run ssh task') {
+        stage('run ssh tasks') {
             steps {
-                bat "cd C:"
+                sshagent (credentials: ['work_cred']) {
+                    sh 'ssh -o StrictHostKeyChecking=no $HOST_IP $CMDS'
             }
         }
     }
